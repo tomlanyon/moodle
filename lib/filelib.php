@@ -2149,7 +2149,7 @@ function put_records_csv($file, $records, $table = NULL) {
 
     echo "x";
 
-    if(!($fp = @fopen($CFG->dataroot.'/temp/'.$file, 'w'))) {
+    if(!($fp = @fopen($CFG->tempdir.'/'.$file, 'w'))) {
         print_error('put_records_csv failed to open '.$file);
     }
 
